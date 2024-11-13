@@ -6,7 +6,7 @@
     {
         static void Main(string[] args)
         {
-
+            /*
             Console.WriteLine("Задача остаток от деления");
             Exercise1 ex1 = new Exercise1(5, 2);
             ex1.PrintResult();
@@ -34,6 +34,11 @@
             Console.WriteLine("\nЗадача два автомобиля");
             Exercise7 ex7 = new Exercise7(30);
             ex7.PrintResult();
+            */
+
+            Exercise11 ex11 = new Exercise11();
+            ex11.Start();
+
         }
     }
 }
