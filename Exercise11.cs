@@ -1,6 +1,6 @@
 ﻿namespace HomeWork1
 {
-    public class Exercise11
+    public class Exercise11 : ExerciseBase
     {
         private int[,] gameField = new int[3, 3];
 
@@ -13,6 +13,8 @@
         const int xField = 1;
         const int oField = 2;
         const int draft = 3;
+
+        public Exercise11() : base(11, "Крестики нолики") { }
 
         /// <summary>
         /// Метод устанавливает значение в ячейку игрового поля
@@ -198,7 +200,7 @@
         #endregion
 
         #region Main Functions
-        public void Start()
+        public override void Start()
         {
             var run = true;
             DrawField();

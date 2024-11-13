@@ -1,10 +1,10 @@
 ﻿namespace HomeWork1
 {
-    public class Exercise7
+    public class Exercise7 : ExerciseBase
     {
         private double hours;
 
-        public Exercise7(double minutes)
+        public Exercise7(double minutes) : base(7, "Задача два автомобиля")
         { 
             hours = minutes / 60; 
         }
@@ -24,7 +24,7 @@
 
             return distance;
         }
-        public void PrintResult()
+        public override void Start()
         {
             double V1 = GetInput("Введите скорость первого автомобиля км/ч: ");
             double V2 = GetInput("Введите скорость второго автомобиля км/ч: ");

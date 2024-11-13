@@ -1,13 +1,10 @@
 ﻿namespace HomeWork1
 {
 
-
-    internal partial class Program
-    {
-        public class Exercise6
+        public class Exercise6 : ExerciseBase
         {
             private int arrayLenght;
-            public Exercise6(int arrayLenght)
+            public Exercise6(int arrayLenght) : base(6, "Задача переворот массива")
             {
                 this.arrayLenght = arrayLenght;
             }
@@ -37,7 +34,7 @@
                 }
                 return reversedArr;
             }
-            public void PrintResult()
+            public override void Start()
             {
                 int[] baseArray = GenerateNumbers(arrayLenght);
                 int[] reversedArray = Reverse(baseArray);
@@ -47,5 +44,5 @@
                 PrintNumbers(reversedArray);
             }
         }
-    }
+    
 }

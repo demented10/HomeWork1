@@ -1,7 +1,9 @@
 ﻿namespace HomeWork1
 {
-    public class Exercise5
+    public class Exercise5 : ExerciseBase
     {
+        public Exercise5() : base(5, "Задача перечисление месяцев") { }
+
         private enum MonthsOfYear
         {
             Январь = 1,
@@ -28,7 +30,7 @@
             }
             else Console.WriteLine("Введеное число должно быть в диапазоне от 1 до 12 включительно.");
         }
-        public void PrintResuslt()
+        public override void Start()
         {
             Console.Write("Введите номер месяца: ");
             if (int.TryParse(Console.ReadLine(), out int value)) SelectMonth(value);

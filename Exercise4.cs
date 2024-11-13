@@ -1,9 +1,9 @@
 ﻿namespace HomeWork1
 {
-    public class Exercise4 
+    public class Exercise4 : ExerciseBase
     {
         private int[] array;
-        public Exercise4(int arrayLenght)
+        public Exercise4(int arrayLenght) : base(4, "Задача минимальное и среднее значение")
         {
             array = new int[arrayLenght];
         }
@@ -33,7 +33,7 @@
             }
             return sum / array.Length;
         }
-        public void PrintResult()
+        public override void Start()
         {
             FillArray();
             int averageValue = GetAverageValue();
